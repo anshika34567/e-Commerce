@@ -3,28 +3,28 @@ const products = [
         id: 1,
         name: "Wireless Headphones",
         price: 49.99,
-        image: "../img/wireless headphone.jpeg",
+        image: "wireless headphone.jpeg",
         featured: true
     },
     {
         id: 2,
         name: "Smart Watch",
         price: 89.99,
-        image: "../img/smart wattch.jpeg",
+        image: "smart wattch.jpeg",
         featured: false
     },
     {
         id: 3,
         name: "Bluetooth Speaker",
         price: 29.99,
-        image: "../img/b_speaker.jpeg",
+        image: "b_speaker.jpeg",
         featured: true
     },
     {
         id: 4,
         name: "VR Headset",
         price: 99.99,
-        image: "../img/vr headsettt.jpeg",
+        image: "vr headsettt.jpeg",
         featured: false
     }
 ];
@@ -59,7 +59,7 @@ $(document).ready(function() {
         html += `
         <div class="col-md-3 mb-4">
             <div class="card h-100">
-                <img src="${product.image}" class="card-img-top" alt="${product.name}" onerror="this.src='../img/placeholder.png'">
+                <img src="${product.image}" class="card-img-top" alt="${product.name}" onerror="this.src='placeholder.png'">
                 <div class="card-body d-flex flex-column">
                     ${product.featured ? '<span class="badge bg-warning text-dark mb-2">Featured</span>' : ''}
                     <h5 class="card-title">${product.name}</h5>
