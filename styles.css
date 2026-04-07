@@ -1,5 +1,5 @@
 body {
-    background: url('../img/b.jpeg') no-repeat center center fixed;
+    background: url('b.jpeg') no-repeat center center fixed;
     background-size: cover;
     animation: fadeIn 0.7s;
 }
